@@ -1,1 +1,14 @@
+POST http://localhost:3333/courses
+Content-Type: application/json
+
+{
+    "title": "Curso de React"
+}
+
+###
+
 GET http://localhost:3333/courses
+
+###
+
+GET http://localhost:3333/courses/0bab6238-2108-47c1-921b-db01c3aed4fe

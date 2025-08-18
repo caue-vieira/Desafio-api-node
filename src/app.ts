@@ -1,12 +1,13 @@
 import fastify from "fastify";
-import { } from "@fastify/swagger-ui";
-import { validatorCompiler, serializerCompiler, ZodTypeProvider, jsonSchemaTransform } from "fastify-type-provider-zod";
+import { validatorCompiler, serializerCompiler, jsonSchemaTransform } from "fastify-type-provider-zod";
+import type { ZodTypeProvider } from "fastify-type-provider-zod";
 import fastifySwagger from "@fastify/swagger";
 import scalarApiReference from "@scalar/fastify-api-reference";
-import { getCoursesRoute } from "./src/routes/getCourses.ts";
-import { getCourseByIdRoute } from "./src/routes/getCourseById.ts";
-import { createCourseRoute } from "./src/routes/createCourse.ts";
+import { getCoursesRoute } from "./routes/getCourses.ts";
+import { getCourseByIdRoute } from "./routes/getCourseById.ts";
+import { createCourseRoute } from "./routes/createCourse.ts";
 
+// Para testes não é necessário rodar a aplicação, apenas ter acesso ao server
 const server = fastify({
     logger: {
         transport: {
@@ -44,10 +45,4 @@ server.register(getCoursesRoute);
 server.register(getCourseByIdRoute);
 server.register(createCourseRoute);
 
-server.get("/health", () => {
-    return "ok";
-})
-
-server.listen({ port: 3333 }).then(() => {
-    console.log("HTTP Server Running");
-});
+export { server };

@@ -15,6 +15,34 @@
       "when": 1755040433825,
       "tag": "0001_nosy_brood",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755289817901,
+      "tag": "0002_aspiring_steve_rogers",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1755290076885,
+      "tag": "0003_faithful_radioactive_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1755297203359,
+      "tag": "0004_melted_blue_blade",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1755462552942,
+      "tag": "0005_kind_molly_hayes",
+      "breakpoints": true
     }
   ]
 }
