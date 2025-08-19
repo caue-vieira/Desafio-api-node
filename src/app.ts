@@ -6,6 +6,7 @@ import scalarApiReference from "@scalar/fastify-api-reference";
 import { getCoursesRoute } from "./routes/getCourses.ts";
 import { getCourseByIdRoute } from "./routes/getCourseById.ts";
 import { createCourseRoute } from "./routes/createCourse.ts";
+import { loginRoute } from "./routes/login.ts";
 
 // Para testes não é necessário rodar a aplicação, apenas ter acesso ao server
 const server = fastify({
@@ -44,5 +45,6 @@ server.setValidatorCompiler(validatorCompiler);
 server.register(getCoursesRoute);
 server.register(getCourseByIdRoute);
 server.register(createCourseRoute);
+server.register(loginRoute);
 
 export { server };

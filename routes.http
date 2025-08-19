@@ -1,8 +1,9 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTk1ZTM0YS1mMmI3LTQ1MmItYTJjMy01Zjk2NGM4MzRmYTgiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTY0MzM5N30.8YG_N1B2DHk81hWY6gpYgfnD5mU5jPrHb6yTAB3CHaE
 
 {
-    "title": "Curso de React"
+    "title": "Curso de Angular"
 }
 
 ###
@@ -11,4 +12,15 @@ GET http://localhost:3333/courses
 
 ###
 
-GET http://localhost:3333/courses/0bab6238-2108-47c1-921b-db01c3aed4fe
+GET http://localhost:3333/courses/68ff9a93-b4b5-4e31-9467-711ec3a61e3f
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTk1ZTM0YS1mMmI3LTQ1MmItYTJjMy01Zjk2NGM4MzRmYTgiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1NTYzOTk0MX0.yd0isUAKr3i5aq6DLt-Pv7CB7YQaXD4DMZEjgld4oqY
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+    "email": "Samuel69@yahoo.com",
+    "password": "123456"
+}

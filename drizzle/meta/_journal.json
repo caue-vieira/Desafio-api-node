@@ -43,6 +43,34 @@
       "when": 1755462552942,
       "tag": "0005_kind_molly_hayes",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1755566004856,
+      "tag": "0006_high_the_call",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1755566087373,
+      "tag": "0007_known_ozymandias",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1755566185842,
+      "tag": "0008_exotic_baron_strucker",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1755566379394,
+      "tag": "0009_sticky_roland_deschain",
+      "breakpoints": true
     }
   ]
 }
